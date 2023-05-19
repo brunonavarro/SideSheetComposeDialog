@@ -1,4 +1,4 @@
-package com.bruno.daniel.navarro.nunez.sidesheetdialog.ui.library
+package com.bruno.daniel.navarro.nunez.sidesheetdialogcompose.component
 
 import androidx.compose.animation.*
 import androidx.compose.animation.core.FiniteAnimationSpec
@@ -21,6 +21,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
@@ -38,6 +39,10 @@ data class SheetActions(
 data class SheetAlignsParams(
     val sheetAlignment: Alignment = Alignment.CenterStart,
     val closeAlignment: Alignment.Horizontal = Alignment.End
+)
+
+data class SheetIcon(
+    val icon : ImageVector = Icons.Rounded.Close
 )
 
 @OptIn(ExperimentalAnimationApi::class)

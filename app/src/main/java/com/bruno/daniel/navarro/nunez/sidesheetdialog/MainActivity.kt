@@ -17,11 +17,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.bruno.daniel.navarro.nunez.sidesheetdialog.ui.library.SheetActions
-import com.bruno.daniel.navarro.nunez.sidesheetdialog.ui.library.SheetAlignsParams
-import com.bruno.daniel.navarro.nunez.sidesheetdialog.ui.library.SideSheet
 import com.bruno.daniel.navarro.nunez.sidesheetdialog.ui.screen.MySideSheetScreen
 import com.bruno.daniel.navarro.nunez.sidesheetdialog.ui.theme.SideSheetDialogTheme
+import com.bruno.daniel.navarro.nunez.sidesheetdialogcompose.component.SheetActions
+import com.bruno.daniel.navarro.nunez.sidesheetdialogcompose.component.SheetAlignsParams
+import com.bruno.daniel.navarro.nunez.sidesheetdialogcompose.component.SideSheet
 
 class MainActivity : ComponentActivity() {
 
@@ -32,7 +32,6 @@ class MainActivity : ComponentActivity() {
         setContent {
             SideSheetDialogTheme {
                 // A surface container using the 'background' color from the theme
-
                 Greeting(
                     updateVisibleDrawer = ::updateVisibleDrawer,
                     closeOrShowDrawer = ::closeOrShowDrawer,
@@ -101,7 +100,6 @@ fun Greeting(
 @Composable
 fun DefaultPreview() {
     SideSheetDialogTheme {
-
         Greeting()
     }
 }

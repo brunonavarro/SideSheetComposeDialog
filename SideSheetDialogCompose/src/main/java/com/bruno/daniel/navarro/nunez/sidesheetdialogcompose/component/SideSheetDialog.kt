@@ -7,13 +7,10 @@ import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.Card
 import androidx.compose.material.Icon
 import androidx.compose.material.IconButton
-import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Close
 import androidx.compose.runtime.*
@@ -23,10 +20,6 @@ import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalConfiguration
-import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.platform.LocalView
-import androidx.compose.ui.unit.Density
-import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -49,6 +42,7 @@ data class SheetIcon(
 @Composable
 fun SideSheet(
     modifier: Modifier = Modifier,
+    sheetIcon: SheetIcon = SheetIcon(),
     sheetAction: SheetActions,
     sheetAlignsParams: SheetAlignsParams = SheetAlignsParams(),
     key: Boolean = false,
@@ -117,8 +111,10 @@ fun SideSheet(
         ///Derecha offset x = 60
         ///Izquierda offset x = 0 o -negativos
         Card(
-            modifier = modifier.fillMaxWidth(0.85f)
-                .fillMaxHeight().offset(initOffset2.x.dp, 0.dp),
+            modifier = modifier
+                .fillMaxWidth(0.85f)
+                .fillMaxHeight()
+                .offset(initOffset2.x.dp, 0.dp),
             elevation = 7.dp, shape = cornerRadius
         ) {
             Column(
@@ -137,7 +133,7 @@ fun SideSheet(
                     }
                 ) {
                     Icon(
-                        Icons.Rounded.Close, contentDescription = "",
+                        sheetIcon.icon, contentDescription = "",
                         modifier = Modifier
                             .size(30.dp)
                             .align(Alignment.CenterHorizontally)

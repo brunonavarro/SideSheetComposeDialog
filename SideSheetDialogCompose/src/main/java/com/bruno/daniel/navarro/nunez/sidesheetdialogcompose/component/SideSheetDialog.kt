@@ -24,6 +24,76 @@ import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
+/**
+ * Create a [Duration] using a [Double]:
+ *     val minutes = 10.0
+ *     val minutes_to_millis = minutes.MIN
+ *     // -- or --
+ *     val minutes_to_millis = 10.0.MIN
+ */
+@Stable
+inline val Double.MIN: Duration
+    get() = Duration(millis = (this * 60000).toInt())
+
+/**
+ * Create a [Duration] using a [Double]:
+ *     val seconds = 10.0
+ *     val seconds_to_millis = minutes.SEG
+ *     // -- or --
+ *     val seconds_to_millis = 10.0.SEG
+ */
+@Stable
+inline val Double.SEG: Duration
+    get() = Duration(millis = (this * 1000).toInt())
+
+/**
+ * Create a [Duration] using a [Double]:
+ *     val millis = 10.0
+ *     val millis_to_millis = minutes.MILLIS
+ *     // -- or --
+ *     val millis_to_millis = 10.0.MILLIS
+ */
+@Stable
+inline val Double.MILLIS: Duration
+    get() = Duration(millis = this.toInt())
+
+/**
+ * Create a [Duration] using a [Int]:
+ *     val minutes = 10
+ *     val minutes_to_millis = minutes.MIN
+ *     // -- or --
+ *     val minutes_to_millis = 10.MIN
+ */
+@Stable
+inline val Int.MIN: Duration
+    get() = Duration(millis = (this * 60000))
+
+/**
+ * Create a [Duration] using a [Int]:
+ *     val seconds = 10
+ *     val seconds_to_millis = minutes.SEG
+ *     // -- or --
+ *     val seconds_to_millis = 10.SEG
+ */
+@Stable
+inline val Int.SEG: Duration
+    get() = Duration(millis = (this * 1000))
+
+/**
+ * Create a [Duration] using a [Int]:
+ *     val millis = 10
+ *     val millis_to_millis = minutes.MILLIS
+ *     // -- or --
+ *     val millis_to_millis = 10.MILLIS
+ */
+@Stable
+inline val Int.MILIS: Duration
+    get() = Duration(millis = this)
+
+data class Duration(
+    val millis: Int = 1000
+)
+
 data class SheetActions(
     val onClose: (key: Boolean) -> Unit,
     val callBackState: (key: Boolean) -> Unit
@@ -31,7 +101,8 @@ data class SheetActions(
 
 data class SheetAlignsParams(
     val sheetAlignment: Alignment = Alignment.CenterStart,
-    val closeAlignment: Alignment.Horizontal = Alignment.End
+    val closeAlignment: Alignment.Horizontal = Alignment.End,
+    val durationAnimation: Duration = Duration(500)
 )
 
 data class SheetIcon(
@@ -55,7 +126,7 @@ fun SideSheet(
      * - val hesitateEasing = CubicBezierEasing(0f, 1f, 1f, 0f)
      * */
 
-    val durationShadowAnimation = 500
+    val durationShadowAnimation = sheetAlignsParams.durationAnimation.millis / 3
     AnimatedVisibility(
         visible = newKey,
         enter = getShadowEnterTransition(durationShadowAnimation),
@@ -69,17 +140,16 @@ fun SideSheet(
                 .clickable {
                     scope.launch {
                         newKey = false
-                        delay(durationShadowAnimation.toLong() + (durationShadowAnimation / 2) + 50)
+                        delay(durationShadowAnimation.toLong() + 50)
                         sheetAction.onClose.invoke(newKey)
                     }
                 }
         )
     }
 
-
     val initOffset = getInitOffset(sheetAlignsParams)
 
-    val durationAnimation = 500
+    val durationAnimation = sheetAlignsParams.durationAnimation.millis
     AnimatedVisibility(
         visible = newKey,
         enter = fadeIn(
@@ -161,7 +231,7 @@ private fun getShadowExitTransition(
 ): ExitTransition{
     return fadeOut(
         animationSpec = getAnimationSpec(
-            durationAnimation = durationShadowAnimation * 2
+            durationAnimation = durationShadowAnimation
         )
     )
 }
@@ -172,7 +242,7 @@ private fun getShadowEnterTransition(
 ): EnterTransition {
     return  fadeIn(
         animationSpec = getAnimationSpec(
-            durationAnimation = durationShadowAnimation * 2
+            durationAnimation = durationShadowAnimation
         )
     )
 }

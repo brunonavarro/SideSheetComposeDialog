@@ -2,19 +2,28 @@
  
  
 ## Implementacion de Dependencia
+```gradle
+implementation 'com.github.brunonavarro:SideSheetDialog:v1.0.0_Beta-01'
+```
+Agrega en build de proyecto:
+```gradle
+repositories {
+    ....
+    maven{
+        url 'https://jitpack.io'
+    }
+}
 ```
 
-```
- 
 ### Implementacion XML alineacion Izquierda 
-```
+```xml
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     ...
     tools:context=".ui.secondXmlActivity.SecondXMLActivity">
 
     ....
 
-    //Boton para abrir el SideSheetDialog
+    <!--Boton para abrir el SideSheetDialog-->
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -25,11 +34,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    //ComposeView para habilitar compose en vistas xml
-    //-Atributos relevantes:
-    //---android:elevation="Xdp" //debe ser superior a 4dp define la elevacion frente a la root vista
-    //---android:visibility="gone"
-    //---android:layout_width="wrap_content"
+    <!--ComposeView para habilitar compose en vistas xml
+          -Atributos relevantes:
+            ---android:elevation="Xdp" //debe ser superior a 4dp
+            ---android:visibility="gone"
+            ---android:layout_width="wrap_content"
+     -->
     <androidx.compose.ui.platform.ComposeView
         android:id="@+id/sideSheet"
         android:layout_width="wrap_content"
@@ -46,10 +56,9 @@ Para añadir el componente SideSheetDialog de compatible con Jetpack Compose
 debemos agregar el siguiente codigo en el Activity/Fragment enlazado al xml
 Donde el SideSheet tendra una apertura de Izquierda a Derecha.
 
-```
+```kotlin
 override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_second_xmlactivity)
+    ....
     sheet = findViewById(R.id.sideSheet)
     val boton = findViewById<Button>(R.id.button)
 
@@ -86,7 +95,7 @@ override fun onCreate(savedInstanceState: Bundle?) {
 ```
 Para una apertura de Derecha a Izquierda habrá que alinear el ComposeView en el XML y agregar en el Activity/Fragment
 lo siguiente:
-```
+```kotlin
 sheet.apply {
     setViewCompositionStrategy(ViewCompositionStrategy.DisposeOnViewTreeLifecycleDestroyed)
     setContent {
@@ -106,6 +115,7 @@ sheet.apply {
                     closeAlignment = Alignment.Start
                 )
             ) {
+                /**Mi diseño personalizado del contenido del SideSheetDialog */
                 MySideSheetScreen()
             }
         }
@@ -115,12 +125,12 @@ sheet.apply {
 Con todo esto agregado, ahora debemos crear una variable mutableStateOf inicializada como true o false, dependiendo del estado 
 en el que queremos que aparezca el SideSheetDialog. Siendo true abierto y false cerrado.
 
-```  
+```kotlin  
 var isVisibleDrawer by mutableStateOf(false)
 ```
 Creamos tambien las respectivas funciones para realizar el cambio de estado acorde a los clicks que se realicen
 
-```  
+```kotlin
 private fun closeOrShowDrawer(show: Boolean){
     isVisibleDrawer = show
     sheet.visibility = if (show) View.VISIBLE else View.GONE

@@ -9,9 +9,10 @@
 /.idea/assetWizardSettings.xml
 .DS_Store
 /build
-/SideSheetDialogCompose
 /SideSheetDialogCompose/src/**
 /captures
 .externalNativeBuild
 .cxx
 local.properties
+debug.log 
+/SideSheetDialogCompose/

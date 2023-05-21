@@ -5,7 +5,7 @@
  
 ## Implementacion de Dependencia
 ```gradle
-implementation 'com.github.brunonavarro:SideSheetDialog:v1.0.0_Beta-01'
+implementation 'com.github.brunonavarro:SideSheetComposeDialog:v1.0.0_Alpha-01'
 ```
 Agrega en build de proyecto:
 ```gradle

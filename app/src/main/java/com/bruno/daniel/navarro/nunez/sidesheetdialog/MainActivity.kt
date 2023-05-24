@@ -21,7 +21,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.navigation.compose.rememberNavController
 import com.bruno.daniel.navarro.nunez.sidesheetdialog.ui.screen.MySideSheetScreen
 import com.bruno.daniel.navarro.nunez.sidesheetdialog.ui.secondXmlActivity.SecondXMLActivity
 import com.bruno.daniel.navarro.nunez.sidesheetdialog.ui.theme.SideSheetDialogTheme
@@ -40,8 +39,6 @@ class MainActivity : ComponentActivity() {
         setContent {
             SideSheetDialogTheme {
                 // A surface container using the 'background' color from the theme
-                val navController = rememberNavController()
-
                 Greeting(
                     updateVisibleDrawer = ::updateVisibleDrawer,
                     closeOrShowDrawer = ::closeOrShowDrawer,

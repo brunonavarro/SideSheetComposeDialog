@@ -50,10 +50,10 @@ android {
 
 dependencies {
 
-    implementation project(path: ':SideSheetDialogCompose')
+    //implementation project(path: ':SideSheetDialogCompose')
 
 
-    //implementation 'com.github.brunonavarro:SideSheetComposeDialog:v1.0.0_Beta-02'
+    implementation 'com.github.brunonavarro:SideSheetComposeDialog:v1.0.0_Beta01'
 
 
 

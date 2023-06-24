@@ -53,7 +53,7 @@ dependencies {
     //implementation project(path: ':SideSheetDialogCompose')
 
 
-    implementation 'com.github.brunonavarro:SideSheetComposeDialog:v1.0.0_Beta01'
+    implementation 'com.github.brunonavarro:SideSheetComposeDialog:v1.0.0_Beta0001'
 
 
 

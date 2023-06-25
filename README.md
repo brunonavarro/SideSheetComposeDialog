@@ -15,3 +15,9 @@
 ### Access the documentation in English: [Quick Start Guide](https://github.com/brunonavarro/DragDroid/blob/master/docs/README_en.md)
 
 ---
+
+![image](https://github.com/brunonavarro/SideSheetComposeDialog/assets/25406162/05accf21-ed5e-4ab7-91f5-134c3e3bdf9f)
+
+![image](https://github.com/brunonavarro/SideSheetComposeDialog/assets/25406162/9c8cde49-8d20-45bf-a4d5-8b6348d49542)
+
+![image](https://github.com/brunonavarro/SideSheetComposeDialog/assets/25406162/1bbdc7dc-68f9-4658-b637-dee907fe0fe6)

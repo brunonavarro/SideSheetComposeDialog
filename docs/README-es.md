@@ -11,10 +11,26 @@
 [![contributors](https://img.shields.io/github/contributors/brunonavarro/SideSheetComposeDialog?style=for-the-badge)](https://github.com/brunonavarro/SideSheetComposeDialog/graphs/contributors)
 
 
-![Descripción de la imagen](https://github.com/brunonavarro/SideSheetDialog/blob/main/SideSheetDialogCompose.jpeg)
+> #### Jetpack Compose es el kit de herramientas moderno de Android para compilar IU nativas. Simplifica y acelera el desarrollo de la IU en Android. Haz que tu app cobre vida rápidamente con menos código, herramientas potentes y APIs intuitivas de Kotlin.
+> #### Este es un proyecto de Libreria enfocado a soluciones Mobile Android que involucren eventos de Abrir una barra de dialogo lateral altamente personalizable. Todo desarrollado con Jetpack Compose.
+>   — Bruno Navarro
 
- 
+##### Con SideSheetComposeDialog, puedes construir aplicaciones que requieran agregar contenido o acciones adicionales en un cuadro de dialogo lateral, y asi apoyar tareas como parte de un flujo.
+##### De esta forma podras llevar tus proyectos a otro nivel de diseño y experiencia de usuario.
+
+
+<img src="https://github.com/brunonavarro/SideSheetDialog/blob/main/SideSheetDialogCompose.jpeg" width="300" height="500" />
+
+
+## Ver ejemplo de inicio rapido: [SimpleExample](https://github.com/brunonavarro/SideSheetComposeDialog/blob/main/app/src/main/java/com/bruno/daniel/navarro/nunez/sidesheetdialog/MainActivity.kt)
+## Si aun no has iniciado en el desarrollo con Jetpack Compose puedes acceder a la documentación de inicio rapido aquí: [Inicio Rapido Jetpack Compose](https://developer.android.com/jetpack/compose/setup?hl=es-419)
+
+
 ## Implementacion de Dependencia
+```
+/**Last Version*/
+val version = '1.0.0'
+```
 ```gradle
 implementation 'com.github.brunonavarro:SideSheetDialog:v1.0.0_Beta-01'
 ```

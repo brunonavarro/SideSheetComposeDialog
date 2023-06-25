@@ -27,7 +27,7 @@
 
 
 ## Implementacion de Dependencia
-```
+```gradle
 /**Last Version*/
 val version = '1.0.0'
 ```

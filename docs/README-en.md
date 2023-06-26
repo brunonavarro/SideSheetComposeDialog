@@ -22,6 +22,12 @@
 
 
 ## See quickstart example: [SimpleExample](https://github.com/brunonavarro/SideSheetComposeDialog/blob/main/app/src/main/java/com/bruno/daniel/navarro/nunez/sidesheetdialog/MainActivity.kt)
+
+### See example of open time in seconds: [Example 1](https://github.com/brunonavarro/SideSheetComposeDialog/blob/main/app/src/main/java/com/bruno/daniel/navarro/nunez/sidesheetdialog/MainActivity.kt)
+### See example of opening time in Minutes: [Example 2](https://github.com/brunonavarro/SideSheetComposeDialog/blob/example2/app/src/main/java/com/bruno/daniel/navarro/nunez/sidesheetdialog/MainActivity.kt)
+### See example of opening time in Milliseconds: [Example 3](https://github.com/brunonavarro/SideSheetComposeDialog/blob/example3/app/src/main/java/com/bruno/daniel/navarro/nunez/sidesheetdialog/MainActivity.kt)
+
+
 ## If you haven't started developing with Jetpack Compose yet, you can access the quickstart documentation here: [Jetpack Compose Quickstart](https://developer.android.com/jetpack/compose/setup?hl=es-419)
 
 

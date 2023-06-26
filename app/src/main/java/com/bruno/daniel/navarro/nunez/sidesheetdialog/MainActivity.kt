@@ -25,10 +25,7 @@ import com.bruno.daniel.navarro.nunez.sidesheetdialog.ui.screen.MySideSheetScree
 import com.bruno.daniel.navarro.nunez.sidesheetdialog.ui.secondXmlActivity.SecondXMLActivity
 import com.bruno.daniel.navarro.nunez.sidesheetdialog.ui.theme.SideSheetDialogTheme
 import com.bruno.daniel.navarro.nunez.sidesheetdialog.ui.threeXmlActivity.ThreeXMLActivity
-import com.bruno.daniel.navarro.nunez.sidesheetdialogcompose.component.SEG
-import com.bruno.daniel.navarro.nunez.sidesheetdialogcompose.component.SheetActions
-import com.bruno.daniel.navarro.nunez.sidesheetdialogcompose.component.SheetAlignsParams
-import com.bruno.daniel.navarro.nunez.sidesheetdialogcompose.component.SideSheet
+import com.bruno.daniel.navarro.nunez.sidesheetdialogcompose.component.*
 
 class MainActivity : ComponentActivity() {
 
@@ -142,7 +139,7 @@ fun Greeting(
         sheetAlignsParams = SheetAlignsParams(
             sheetAlignment = Alignment.BottomStart,
             closeAlignment = Alignment.End,
-            durationAnimation = 0.2.SEG
+            durationAnimation = 0.2.MIN
         )
     ) {
         MySideSheetScreen()

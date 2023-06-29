@@ -37,7 +37,7 @@
 val version = '1.0.0'
 ```
 ```gradle
-implementation 'com.github.brunonavarro:SideSheetDialog:v1.0.0_Beta-01'
+implementation 'com.github.brunonavarro:SideSheetComposeDialog:1.0.0'
 ```
 Agrega en build de proyecto:
 ```gradle

@@ -10,7 +10,7 @@
 [![pull requests](https://img.shields.io/github/issues-pr/brunonavarro/SideSheetComposeDialog?style=for-the-badge)](https://github.com/brunonavarro/SideSheetComposeDialog/pulls)
 [![contributors](https://img.shields.io/github/contributors/brunonavarro/SideSheetComposeDialog?style=for-the-badge)](https://github.com/brunonavarro/SideSheetComposeDialog/graphs/contributors)
 
-## :loudspeaker: **¡Nos encantaría conocer tu opinión! Proporciona feedback [Aquí](https://github.com/brunonavarro/SideSheetComposeDialog/tree/2295e5bc7fd86898d0484a00527d58652863dd33/.github/ISSUE_TEMPLATE/feedback-libreria-sidesheetcomposedialog.md)** :loudspeaker:
+## :loudspeaker: **¡Nos encantaría conocer tu opinión! Proporciona feedback [Aquí](https://github.com/brunonavarro/SideSheetComposeDialog/issues/new?assignees=brunonavarro&labels=feedback&projects=&template=feedback-libreria-sidesheetcomposedialog.md&title=%5BFEEDBACK%5D)** :loudspeaker:
 
 
 ### Accede a la documentacion en Español: [Guia de Inicio Rapido](https://github.com/brunonavarro/SideSheetComposeDialog/blob/master/docs/README-es.md)

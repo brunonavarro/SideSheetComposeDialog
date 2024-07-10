@@ -14,6 +14,8 @@
 > #### This is a Library project focused on Android Mobile solutions involving Open events in a highly customizable sidebar dialog. All developed with Jetpack Compose.
 > — Bruno Navarro
 
+##### SideSheetComposeDialog is a UI library inspired by the Material Design SideSheet component, whose usefulness and added value is compatibility with minSDK 26 and gradle version 7.0.2. Thus being a support for projects that have difficulties implementing the Material Design component and that do not have contemplated the migration and/or update of the Gradle version and the entire core of their projects. In addition, SideSheetComposeDialog is a highly customizable library with the potential to cover practically any use case.
+
 ##### With SideSheetComposeDialog, you can build applications that require adding additional content or actions in a sidesheet dialog, thus supporting tasks as part of a flow.
 ##### In this way you can take your projects to another level of design and user experience.
 

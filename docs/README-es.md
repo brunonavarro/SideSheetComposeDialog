@@ -15,6 +15,8 @@
 > #### Este es un proyecto de Libreria enfocado a soluciones Mobile Android que involucren eventos de Abrir una barra de dialogo lateral altamente personalizable. Todo desarrollado con Jetpack Compose.
 >   — Bruno Navarro
 
+##### SideSheetComposeDialog es una libreria de UI inspirada en el componente SideSheet de Material Design, cuya utilidad y valor agregado es la compatibilidad con el minSDK 26 y con version de gradle 7.0.2. Siendo asi un apoyo para proyectos que tengan dificultades para implementar el componente de Material Design y que no tengan contemplado la migracion y/o actualizacion de version de gradle y todo el core de sus proyectos. Ademas SideSheetComposeDialog es una libreria altamente personalizable y con potencial de cubrir practicamente cualquier caso de uso.
+
 ##### Con SideSheetComposeDialog, puedes construir aplicaciones que requieran agregar contenido o acciones adicionales en un cuadro de dialogo lateral, y asi apoyar tareas como parte de un flujo.
 ##### De esta forma podras llevar tus proyectos a otro nivel de diseño y experiencia de usuario.
 

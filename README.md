@@ -18,6 +18,9 @@
 ### Access the documentation in English: [Quick Start Guide](https://github.com/brunonavarro/SideSheetComposeDialog/blob/master/docs/README-en.md)
 
 ---
+![image](https://github.com/user-attachments/assets/17d8bbcd-d907-4069-94ca-cde34e6598a6) ![image](https://github.com/user-attachments/assets/32185e96-2565-44ec-acf0-612aaf99e297)
+
+---
 #### **SideSheetComposeDialog** es una libreria de UI inspirada en el componente **SideSheet** de **Material Design**, cuya utilidad y valor agregado es la compatibilidad con el minSDK 26 y con version de gradle 7.0.2. Siendo asi un apoyo para proyectos que tengan dificultades para implementar el componente de Material Design y que no tengan contemplado la migracion y/o actualizacion de version de gradle y todo el core de sus proyectos. Además **SideSheetComposeDialog** es una libreria altamente personalizable y con potencial de cubrir practicamente cualquier caso de uso.
 
 #### **SideSheetComposeDialog** ofrece alta compatibilidad para proyectos grandes con problemas de compatibilidad con la version 3 de Material Design y al mismo tiempo ayuda a revivir proyectos desfazados o atrasados en la actualizacion de gradle y dependencias. **SideSheetComposeDialog** está enfocado los siguientes aspectos:

@@ -49,7 +49,7 @@ dependencies {
     //implementation project(path: ':SideSheetDialogCompose')
 
 
-    implementation("com.github.brunonavarro:SideSheetComposeDialog:1.0.0")
+    implementation("com.github.brunonavarro:SideSheetComposeDialog:2.0.0-1.9.0")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

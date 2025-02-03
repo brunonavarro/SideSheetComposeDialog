@@ -22,7 +22,7 @@ android {
                     from(components["release"])
                     groupId = "com.github.brunonavarro"
                     artifactId = "SideSheetComposeDialog"
-                    version = "v2.0.0-1.9.0-beta01"
+                    version = "v2.0.0-1.9.0"
                 }
             }
             repositories {  // Repositorios fuera del bloque publications

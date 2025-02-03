@@ -22,7 +22,7 @@ android {
                     from(components["release"])
                     groupId = "com.github.brunonavarro"
                     artifactId = "SideSheetComposeDialog"
-                    version = "2.0.0-1.9.0"
+                    version = "v2.1.0-1.9.0"
                 }
                 repositories {
                     mavenLocal()
